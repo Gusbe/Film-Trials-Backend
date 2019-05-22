@@ -23,7 +23,10 @@ const newUser = {
 };
 
 
+Location.collection.dropIndexes();
 
+
+console.log('> Indexes deleted');
 Location.remove({})
   .then(() => {
     console.log('> Locations removed');
@@ -33,8 +36,8 @@ Location.remove({})
         User.create(newUser)
           .then((user) => {
             console.log("> > > User created: " + user);
-            
-            
+
+
             const locationsArray = [
               {
                 title: 'Alella',
@@ -64,8 +67,8 @@ Location.remove({})
                 title: 'Lleida',
                 coords: {
                   coordinates: [
-                    41.6147605,
-                    0.6267842
+                    0.6267842,
+                    41.6147605
                   ],
                   type: "Point"
                 },
@@ -99,12 +102,11 @@ Location.remove({})
             ];
 
             Location.create(locationsArray)
-              .then( () => {
+              .then(() => {
                 console.log(`> > > > Created ${locationsArray.length} locations`);
                 mongoose.connection.close();
               });
 
-            
 
 
 
