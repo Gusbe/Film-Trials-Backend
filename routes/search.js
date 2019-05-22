@@ -21,8 +21,8 @@ router.get('/', (req, res) => {
         coordinates: [parseFloat(lon), parseFloat(lat)]
       },
       spherical: true,
-      maxDistance: dist,
-      distanceField: 'distanceFromAlella'
+      maxDistance: parseFloat(dist),
+      distanceField: 'distance'
     }
   }])
   .then( (results) => {

@@ -29,13 +29,13 @@ Location.collection.dropIndexes();
 console.log('> Indexes deleted');
 Location.remove({})
   .then(() => {
-    console.log('> Locations removed');
+    console.log('> > Locations removed');
     User.remove({})
       .then(() => {
-        console.log('> > Users removed');
+        console.log('> > > Users removed');
         User.create(newUser)
           .then((user) => {
-            console.log("> > > User created: " + user);
+            console.log("> > > > User created: " + user);
 
 
             const locationsArray = [
@@ -98,12 +98,24 @@ Location.remove({})
                 },
                 scenePictureUrl: 'Not yet!',
                 user: user._id
+              },
+              {
+                title: 'San Francisco',
+                coords: {
+                  coordinates: [
+                    -122.4199061,
+                    37.7790262
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'Not yet!',
+                user: user._id
               }
             ];
 
             Location.create(locationsArray)
               .then(() => {
-                console.log(`> > > > Created ${locationsArray.length} locations`);
+                console.log(`> > > > > Created ${locationsArray.length} locations`);
                 mongoose.connection.close();
               });
 
