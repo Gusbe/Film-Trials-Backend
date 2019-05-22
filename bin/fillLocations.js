@@ -83,6 +83,18 @@ Location.remove({})
                 },
                 scenePictureUrl: 'Not yet!',
                 user: user._id
+              },
+              {
+                title: 'Barcelona',
+                coords: {
+                  coordinates: [
+                    2.1774322,
+                    41.3828939
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'Not yet!',
+                user: user._id
               }
             ];
 
