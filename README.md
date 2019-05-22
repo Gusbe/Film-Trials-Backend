@@ -70,7 +70,7 @@ User profile:
   - Input: resultsObject
   - Inside: List of OneResultComponent
 
--OneResultComponent
+- OneResultComponent
   - Input: LocationObject
 
 - AddLocationPageComponent
@@ -150,6 +150,9 @@ scenePictureUrl - String // required
 
 - GET /location/:id
   - 200 with locationObject of a spot
+  - validation  
+    - id is valid (404)
+    - id exists (404)
 
 - POST /location/add
   - body:
@@ -170,6 +173,8 @@ scenePictureUrl - String // required
     - scenePictureUrl
   - validation
     - fields not empty
+    - id is valid (404)
+    - id exists (404)
   - update location
   - 200 with locationObject
 
@@ -179,7 +184,7 @@ scenePictureUrl - String // required
     - id exists (404)
   - remove location
   
-- POST /search/:lat/:lon/:dist
+- POST /search/?coords&dist
   - validation
     - fields not empty
   - 200 with array of LocationObject
