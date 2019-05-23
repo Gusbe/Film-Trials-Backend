@@ -32,57 +32,7 @@ router.get('/', (req, res) => {
       .json(results)
   })
   .catch((err) => console.log(err));
-
-
-
-  // Location.find({
-  //   coords: {
-  //     $geoWithin: {
-  //       $centerSphere: [[lon, lat], dist / 6371000]
-  //     }
-  //   }
-  // })
-  //   .then( (results) => {
-  //     console.log("Results: " + results);
-  //     res
-  //       .status(200)
-  //       .json(results)
-  //   })
-  //   .catch( (err) => console.log(err) );
-
-
-
-
-
-
-
-
-
-
-
-
-
-  Location.find(
-    {
-      $geoNear: {
-         near: { 
-           type: "Point",
-           coordinates: [ lon , lat]
-         },
-         distanceField: "dist.calculated",
-         maxDistance: dist,
-         spherical: true
-      }
-    }
-   )
-    .then( (results) => {
-          console.log("Results: " + results);
-          res
-            .status(200)
-            .json(results)
-        })
-        .catch( (err) => console.log(err) );
-
+  
 });
 
 
