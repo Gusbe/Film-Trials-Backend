@@ -137,7 +137,8 @@ router.delete('/delete/:id', (req, res) => {
 //GET /location/:id
 router.get('/:id', (req, res) => {
 
-  Location.findById(req.params.id)
+  Location.findById(req.params.id).
+  populate('user')
     .then((locationObject) => {
       if (locationObject) {
         res
