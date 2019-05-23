@@ -1,5 +1,6 @@
 let express = require('express');
 let router = express.Router();
+const parser = require('../config/cloudinary');
 
 const Location = require('./../models/location.js');
 
@@ -7,6 +8,7 @@ const Location = require('./../models/location.js');
 router.post('/add', (req, res) => {
   const { title, coords, scenePictureUrl } = req.body;
 
+  console.log("Body to add -> " + req.body);
   if (!title || !coords || !scenePictureUrl) {
     res
       .status(422)
@@ -27,6 +29,17 @@ router.post('/add', (req, res) => {
       })
       .catch((err) => console.log("Error creating Location-----> " + err));
   }
+});
+
+//POST /location/add/picture
+router.post('/add/picture', parser.single('photo'), (req, res, next) => {
+  console.log('file upload');
+  if (!req.file) {
+    next(new Error('No file uploaded!'));
+  };
+  const imageUrl = req.file.secure_url;
+  console.log("imageUrl -->  " + imageUrl);
+  res.json(imageUrl).status(200);
 });
 
 
