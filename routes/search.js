@@ -6,7 +6,7 @@ const Location = require('./../models/location.js');
 
 
 //GET /search/?coords&dist
-router.get('/', (req, res) => {
+router.get('/', (req, res, next) => {
   
   const lat = req.query.lat;
   const lon = req.query.lon;
@@ -31,7 +31,7 @@ router.get('/', (req, res) => {
       .status(200)
       .json(results)
   })
-  .catch((err) => console.log(err));
+  .catch((err) => next(err));
   
 });
 

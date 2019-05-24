@@ -1,11 +1,12 @@
 let express = require('express');
 let router = express.Router();
+const {isLoggedIn} = require('./../helpers/middlewares');
 const parser = require('../config/cloudinary');
 
 const Location = require('./../models/location.js');
 
 //POST /location/add
-router.post('/add', (req, res) => {
+router.post('/add', isLoggedIn(),(req, res, next) => {
   const { title, coords, scenePictureUrl } = req.body;
 
   console.log("Body to add -> " + req.body);
@@ -13,11 +14,6 @@ router.post('/add', (req, res) => {
     res
       .status(422)
       .json({ message: 'There is not all the necessary information' });
-  }
-  else if (!req.session.currentUser) {
-    res
-      .status(422)
-      .json({ message: 'User not logged in' });
   }
   else {
     const user = req.session.currentUser._id;
@@ -27,12 +23,12 @@ router.post('/add', (req, res) => {
           .status(200)
           .json(locationObject);
       })
-      .catch((err) => console.log("Error creating Location-----> " + err));
+      .catch((err) => next(err));
   }
 });
 
 //POST /location/add/picture
-router.post('/add/picture', parser.single('photo'), (req, res, next) => {
+router.post('/add/picture', isLoggedIn(), parser.single('photo'), (req, res, next) => {
   console.log('file upload');
   if (!req.file) {
     next(new Error('No file uploaded!'));
@@ -47,7 +43,7 @@ router.post('/add/picture', parser.single('photo'), (req, res, next) => {
 
 
 //POST /location/update/:id
-router.post('/update/:id', (req, res) => {
+router.post('/update/:id', (req, res, next) => {
   const { title, coords, scenePictureUrl } = req.body;
   const id = req.params.id;
 
@@ -80,14 +76,14 @@ router.post('/update/:id', (req, res) => {
             .json({ message: 'This location does not exists' });
         }
       })
-      .catch((err) => console.log("Error updating Location-----> " + err));
+      .catch((err) => next(err));
   }
 });
 
 
 
 //DELETE /location/delete/:id
-router.delete('/delete/:id', (req, res) => {
+router.delete('/delete/:id', (req, res, next) => {
 
   const id = req.params.id;
 
@@ -120,7 +116,7 @@ router.delete('/delete/:id', (req, res) => {
             .json({ message: 'Could delete location!'});
         }
       })
-      .catch((err) => console.log("Error updating Location-----> " + err));
+      .catch((err) => next(err));
   }
 });
 
@@ -151,7 +147,7 @@ router.get('/:id', (req, res) => {
           .json({ message: 'This location does not exists' });
       }
     })
-    .catch((err) => console.log("Error fetching Location-----> " + err));
+    .catch((err) => next(err));
 });
 
 
