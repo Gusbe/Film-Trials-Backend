@@ -39,79 +39,420 @@ Location.remove({})
 
 
             const locationsArray = [
+              
+                
+              
+
+
+
+
+
+
               {
-                title: 'Alella',
+                title: 'Vicky Cristina Barcelona',
                 coords: {
                   coordinates: [
-                    2.294276,
-                    41.495287
+                    2.182662809889837,
+                    41.388007193572584
                   ],
                   type: "Point"
                 },
-                scenePictureUrl: 'http://www.alella.cat/ARXIUS/2010_2015/2011/Alella_aeria.jpg',
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559046396/Film-Trails/nvxprwtxfq09xvk1abma.png',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.181779408852165,
+                    41.38346729994108
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559046461/Film-Trails/hjaaikmdlx9luf8f5kcm.png',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.2032279103900154,
+                    41.38706994522921
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559046354/Film-Trails/ecga8xmseqkgwwlnpmdc.png',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.1750621045031626,
+                    41.383380144269
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559046540/Film-Trails/imb4pzqzdaqgidspokuo.png',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.173647687778422,
+                    41.385705727324826
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559046730/Film-Trails/nerhfsb2wisbbf2zbidi.png',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.171533765436155,
+                    41.378611732389835
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559048659/Film-Trails/zongacyrq8fnbjzbbr1t.jpg',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.1726983148864387,
+                    41.38181173408345
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559046887/Film-Trails/zwrdeeiqtteli4g4bngj.jpg',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.153169574338208,
+                    41.368966648728836
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049043/Film-Trails/reg3bgpotlqafvgnjuzr.png',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.1656780391402637,
+                    41.38202744812142
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559048823/Film-Trails/jjrrgx4h15gyhywwzwrr.png',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.1715857852512674,
+                    41.378642682858725
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559048702/Film-Trails/gro0rxm6bcdnqcrj69g1.jpg',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.163990060947538,
+                    41.39065424222248
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049121/Film-Trails/yve6zutlzlu9ugnw9z9o.png',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.161939924014111,
+                    41.3950833345645
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049242/Film-Trails/flapk95g615mrw0wd49x.jpg',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.1601585757597146,
+                    41.368458833577485
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559048989/Film-Trails/igo50kh14ojlpmsiyvdb.png',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.163918976840924,
+                    41.391544768859575
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049178/Film-Trails/szgbdzxkxkh0fjgjzsnn.png',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.174373398336822,
+                    41.412941099354846
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049648/Film-Trails/tr1yfxtg02vlnacyyss0.png',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.1581007638203964,
+                    41.39795664449699
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049303/Film-Trails/rihyxfk0jmm3gxqvaa2t.png',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.1748493068942714,
+                    41.404185269773784
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049352/Film-Trails/dilfj57yfkrlhkhrzd5s.png',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.1743126127512573,
+                    41.413231327184086
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049692/Film-Trails/li15zvrbi4dhwqglo0vv.png',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.1195736091929978,
+                    41.38942340221623
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049813/Film-Trails/cco62j0g0yp4kytn82s3.png',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.117090883938017,
+                    41.39761945049111
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049883/Film-Trails/ml7w0djbgxwymzc923s0.png',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.1210813856042363,
+                    41.42118341753176
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049985/Film-Trails/vgwxq3gudidtaoijdcn3.jpg',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.1525566378847683,
+                    41.41377642854701
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049764/Film-Trails/nxuvngugpulewa2hw8uj.jpg',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.0745391545839467,
+                    41.30255761683259
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049931/Film-Trails/f9kahwlvc3jvvlaseqfv.png',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    2.0975003501051894,
+                    41.44958491531883
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559050042/Film-Trails/rznwtnvoj7kvt69ub7c9.jpg',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    -5.945166945253428,
+                    43.59556073767909
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559050241/Film-Trails/ahnnvlraffnimqslvxuq.png',
+                user: user._id
+              },{
+                title: 'Vicky Cristina Barcelona',
+                coords: {
+                  coordinates: [
+                    -5.923646734157135,
+                    43.55476954985652
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559050352/Film-Trails/qyvjidtcr90u2vex5gpf.png',
+                user: user._id
+              },{
+                title: 'Game of Thrones',
+                coords: {
+                  coordinates: [
+                    -5.989170605185904,
+                    37.38286472868774
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559051249/Film-Trails/kvfdgqiwg21eeflwa40b.png',
+                user: user._id
+              },{
+                title: 'Game of Thrones',
+                coords: {
+                  coordinates: [
+                    -4.77803088233577,
+                    37.87672835006111
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559051551/Film-Trails/euzhddcbs9wpgzivtxoh.jpg',
+                user: user._id
+              },{
+                title: 'Game of Thrones',
+                coords: {
+                  coordinates: [
+                    2.8263825351065157,
+                    41.988912417076754
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559051748/Film-Trails/zkimrlcwpqbs6b3knqqp.jpg',
+                user: user._id
+              },{
+                title: 'Game of Thrones',
+                coords: {
+                  coordinates: [
+                    -1.9092051530927883,
+                    36.9416040460739
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559052100/Film-Trails/wckf6l9nle1vsxurjk8k.jpg',
+                user: user._id
+              },{
+                title: 'Game of Thrones',
+                coords: {
+                  coordinates: [
+                    -5.882603854251598,
+                    39.462127867448636
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559052377/Film-Trails/dvy6ukdnmzovo77jtyvs.jpg',
+                user: user._id
+              },{
+                title: 'Game of Thrones',
+                coords: {
+                  coordinates: [
+                    0.40659001227925884,
+                    40.35724533305075
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559052613/Film-Trails/x7utizzfncls99vmrcgx.jpg',
+                user: user._id
+              },{
+                title: 'Game of Thrones',
+                coords: {
+                  coordinates: [
+                    -2.784624463977479,
+                    43.44631472584436
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559052871/Film-Trails/g0h9mttcu0cykhee9gxo.jpg',
+                user: user._id
+              },{
+                title: 'Game of Thrones',
+                coords: {
+                  coordinates: [
+                    -1.7059435604887545,
+                    40.835704670234534
+                  ],
+                  type: "Point"
+                },
+                scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559053159/Film-Trails/ag4yz6h8nmbscgs2dkgj.jpg',
                 user: user._id
               },
-              {
-                title: 'Costa Garraf',
-                coords: {
-                  coordinates: [
-                    2.222276,
-                    41.005287
-                  ],
-                  type: "Point"
-                },
-                scenePictureUrl: 'https://www.redaccionmedica.com/images/destacados/una-bacteria-del-agua-del-mar-podria-ser-la-clave-para-tratar-el-melanoma-2097_620x368.jpg',
-                user: user._id
-              },
-              {
-                title: 'Lleida',
-                coords: {
-                  coordinates: [
-                    0.6267842,
-                    41.6147605
-                  ],
-                  type: "Point"
-                },
-                scenePictureUrl: 'https://upload.wikimedia.org/wikipedia/commons/5/5f/Lleida_-_La_Seu_Vella_%28des_de_Cappont%29.jpg',
-                user: user._id
-              },
-              {
-                title: 'Madrid',
-                coords: {
-                  coordinates: [
-                    -3.703582,
-                    40.416705
-                  ],
-                  type: "Point"
-                },
-                scenePictureUrl: 'https://q-ak.bstatic.com/images/hotel/max1024x768/925/92534567.jpg',
-                user: user._id
-              },
-              {
-                title: 'Barcelona',
-                coords: {
-                  coordinates: [
-                    2.1774322,
-                    41.3828939
-                  ],
-                  type: "Point"
-                },
-                scenePictureUrl: 'https://img.pixers.pics/pho_wat(s3:700/FO/62/33/72/02/700_FO62337202_19b47c7d33a5f7180483e4a0e38e6b22.jpg,700,467,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,417,jpg)/vinilos-de-barcelona-skyline-panorama-de-la-noche.jpg.jpg',
-                user: user._id
-              },
-              {
-                title: 'San Francisco',
-                coords: {
-                  coordinates: [
-                    -122.4199061,
-                    37.7790262
-                  ],
-                  type: "Point"
-                },
-                scenePictureUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/San_Francisco_from_the_Marin_Headlands_in_March_2019.jpg/1920px-San_Francisco_from_the_Marin_Headlands_in_March_2019.jpg',
-                user: user._id
-              }
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
             ];
+
+
+
+
+
+
+
+
+
 
             Location.create(locationsArray)
               .then(() => {
