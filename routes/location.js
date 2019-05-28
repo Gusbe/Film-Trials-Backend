@@ -7,7 +7,7 @@ const Location = require('./../models/location.js');
 
 //POST /location/add
 router.post('/add', isLoggedIn(),(req, res, next) => {
-  const { title, coords, scenePictureUrl } = req.body;
+  const { title, coords, scenePictureUrl, placeName } = req.body;
 
   console.log("Body to add -> " + req.body);
   if (!title || !coords || !scenePictureUrl) {
@@ -17,7 +17,7 @@ router.post('/add', isLoggedIn(),(req, res, next) => {
   }
   else {
     const user = req.session.currentUser._id;
-    Location.create({ user, title, coords, scenePictureUrl })
+    Location.create({ user, title, coords, scenePictureUrl, placeName })
       .then((locationObject) => {
         res
           .status(200)
@@ -63,7 +63,7 @@ router.post('/update/:id', (req, res, next) => {
 
     const user = req.session.currentUser._id;
 
-    Location.findOneAndUpdate({ $and: [{ _id: id }, { user: req.session.currentUser._id }] }, { title, coords, scenePictureUrl }, { new: true })
+    Location.findOneAndUpdate({ $and: [{ _id: id }, { user: req.session.currentUser._id }] }, { title, coords, scenePictureUrl, placeName }, { new: true })
       .then((locationObject) => {
         if (locationObject) {
           res

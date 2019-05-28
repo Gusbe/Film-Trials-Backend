@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const locationSchema = new Schema({
   user: { type: Schema.Types.ObjectId, ref: 'User' },
   title: { type: String, required: true },
+  placeName: { type: String },
   coords: {
     type: {
       type: String,
