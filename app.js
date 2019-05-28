@@ -29,7 +29,7 @@ const app = express();
 
 app.use(cors({
   credentials: true,
-  origin: [process.env.PUBLIC_DOMAIN, 'https://film-trails.herokuapp.com/']
+  origin: [process.env.PUBLIC_DOMAIN, 'https://film-trails.herokuapp.com']
 }));
 // app.use((req, res, next) => {
 //   res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
