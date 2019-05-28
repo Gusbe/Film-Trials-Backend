@@ -1,0 +1,340 @@
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color:rgba(210, 55, 31, 0.023);
+  font-family: Arial, sans-serif;
+  line-height: 147%;
+  color: rgb(74, 74, 74);
+}
+
+.navbar {
+  background-image: url('/img/clapboard.svg');
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:100;
+  display: flex;
+  justify-content: space-between;
+  height: 45px; 
+}
+
+.logo{
+  display:flex;
+}
+
+.logo img {
+  margin: 5px 10px 0 10px;
+  height: 25px;
+}
+
+h1 {
+  color: white;
+  font-family: 'Patua One', cursive;
+  font-size: 20px;
+  margin-top: 8px;
+  letter-spacing: 1px;
+}
+
+.login {
+  margin-top: 7px;
+  margin-right: 10px;
+  color: white;
+}
+
+.login img {
+  height: 25px;
+  margin-right: 5px;
+}
+
+.logout {
+  margin-top: 7px;
+  margin-right: 10px;
+  color: white;
+  font-weight: bolder;
+}
+
+.logout img {
+  height: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.link-nav {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.login-page {
+  margin-top: 35px;
+  border: 1px solid transparent;
+}
+
+.background {
+  background-image: url('/img/background.jpg');
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-size: 200%;
+  height: 100%;
+  filter: blur(5px);
+}
+
+.form-box {
+  margin: 100px auto;
+  text-align: center;
+  width: 360px;
+  padding: 50px 4% 4% 4%;
+  background-color: white;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0);
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+#form-button {
+  background: rgb(13, 15, 80);
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.signup-page {
+  margin-top: 35px;
+  border: 1px solid transparent;
+}
+
+.signup-link {
+  text-decoration: none;
+  color: rgb(13, 15, 80);
+  font-size: 12px;
+  text-align: center;
+}
+
+.add-location-page {
+  margin-top: 35px;
+  padding-top: 15px;
+}
+
+.add-location {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+h2{
+  margin-left: 15px;
+}
+
+.get-location-button {
+  background: #f2f2f2;
+  border: 1px solid #bdbdbd;
+  padding: 5px;
+  border-radius: 2px;
+  font-size: 12px;
+  height: 25px;
+  margin-top: 30px;
+}
+
+.add-map {
+  padding: 0 22px;
+}
+
+.add-form {
+  padding: 0 20px 50px 20px;
+}
+
+.lat-lon-inputs {
+  display: none;
+}
+
+.add-form input {
+  outline: 0;
+  background: #f2f2f2;
+  border: 1px solid #cdcdcd;
+  width: 100%;
+  margin: 0 0 22px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+#add-button {
+  background: rgb(13, 15, 80);
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+#add-button-disabled {
+  background: rgba(18, 20, 77, 0.44);
+  color: rgb(101, 101, 101);
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.view-page {
+  margin-top: 35px;
+  padding-bottom: 62px;
+}
+
+.view-map {
+  height: 150px;
+}
+
+.view-title {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.view-title h1{
+  font-size: 32px;
+  font-family: Arial, sans-serif;
+  color: rgb(74, 74, 74);
+}
+
+.view-image img{
+  /* margin: 20px 20px 20px 20px; */
+  height: auto;
+  width: 100%;
+}
+
+.view-image p{
+  text-align: right;
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+.view-links {
+  text-align: center;
+}
+
+.view-links-component-link {
+  margin: 20px 20px 280px 20px;
+  color: rgb(74, 74, 74);
+  text-decoration: underline;
+}
+
+.view-links-component {
+  margin: 20px 20px 80px 20px;
+  color: rgb(74, 74, 74);
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color:rgb(13, 15, 80);
+  position:fixed;
+  bottom:0;
+  width:100%;
+  z-index:100;
+  display: flex;
+  justify-content: space-evenly;
+  height: 40px;
+}
+
+.footer img {
+  height: 30px;
+  padding: 5px 0px 0px 0px; 
+}
+
+.search-map-page{
+  margin-top: 35px;
+  position: relative;
+}
+
+.search-map {
+  height: 100vp;
+}
+
+.current-location-button {
+  background: #dfdfdf;
+  border: 1px solid #bdbdbd;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0);
+  padding: 5px;
+  border-radius: 2px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  z-index: 10;
+}
+
+.location-info {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 50px;
+  right: 15px;
+  left: 15px;
+  z-index: 10;
+  width: auto;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.location-info p {
+  background-color: white;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.location-info img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+
+
+
+
+
+/* ---- typography ---- */
+
+p {
+  margin: 0;
+}
+
+
