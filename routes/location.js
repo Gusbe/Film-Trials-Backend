@@ -1,7 +1,7 @@
 let express = require('express');
 let router = express.Router();
 const {isLoggedIn} = require('./../helpers/middlewares');
-const parser = require('./../config/cloudinary');
+const parser = require('../config/cloudinary');
 
 const Location = require('./../models/location.js');
 
