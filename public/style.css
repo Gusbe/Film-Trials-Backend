@@ -7,13 +7,22 @@ html {
   box-sizing: inherit;
 }
 
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: #d5d5d5;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color:rgba(210, 55, 31, 0.023);
+  background-color:rgba(199, 193, 192, 0.084);
   font-family: Arial, sans-serif;
   line-height: 147%;
   color: rgb(74, 74, 74);
+  overflow:hidden;
 }
 
 .navbar {
@@ -150,7 +159,7 @@ h2{
 }
 
 .get-location-button {
-  background: #f2f2f2;
+  background-color: #f2f2f2;
   border: 1px solid #bdbdbd;
   padding: 5px;
   border-radius: 2px;
@@ -173,7 +182,7 @@ h2{
 
 .add-form input {
   outline: 0;
-  background: #f2f2f2;
+  background-color: #f2f2f2;
   border: 1px solid #cdcdcd;
   width: 100%;
   margin: 0 0 22px;
@@ -317,8 +326,15 @@ h3 {
 
 .location-info p {
   background-color: white;
-  padding: 8px;
   font-weight: bold;
+  padding: 10px;
+}
+
+.title-card {
+  background-color: white;
+  font-weight: bold;
+  font-size: 22px;
+  padding-top: 15px;
 }
 
 .location-info img {
@@ -329,7 +345,87 @@ h3 {
   right: 8px;
 }
 
+.search-list-page {
+  margin-top: 40px;
+  position: relative;
+}
 
+.list-map {
+  overflow: hidden;
+  height: 300px;
+  position: fixed;
+  top: 45px;
+  width: 100%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0);
+
+}
+
+.result-list {
+  margin-top: 345px;
+  padding: 25px;
+}
+
+.result-list h2 {
+  margin: 10px 0px;
+  font-weight: bolder;
+}
+
+.one-result {
+  width: 100%;
+  margin-top: 55px;
+  background-color: rgb(245, 245, 245);
+  padding-bottom: 15px;
+  border-radius: 3px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0);
+  text-align: center;
+}
+
+
+.location-info-one-result {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  background-size: cover;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.title-distance {
+  padding: 0 10px;
+  text-align: left;
+}
+
+#title-one-result {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#distance-one-result {
+  font-size: 14px;
+}
+
+.list-current-location-button {
+  background: #dfdfdf;
+  border: 1px solid #bdbdbd;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0);
+  padding: 5px;
+  border-radius: 2px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  z-index: 10;
+}
+
+.place-distance {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0px;
+}
+
+.link-location {
+  text-decoration: none;
+  color: rgb(74, 74, 74);
+}
 
 
 
