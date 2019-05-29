@@ -23,7 +23,14 @@ Location.find()
   .then((data) => {
     let seed = '';
     data.forEach( (location) => {
-      seed += `{
+      
+      seed += '{';
+
+      if (location.placeName){
+        seed += `placeName: '${location.placeName}',`;
+      }
+
+      seed += `
         title: '${location.title}',
         coords: {
           coordinates: [
@@ -33,7 +40,6 @@ Location.find()
           type: "Point"
         },
         scenePictureUrl: '${location.scenePictureUrl}',
-        placeName: '${location.placeName}',
         user: user._id
       },`;
     })

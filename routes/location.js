@@ -44,7 +44,7 @@ router.post('/add/picture', isLoggedIn(), parser.single('photo'), (req, res, nex
 
 //POST /location/update/:id
 router.post('/update/:id', (req, res, next) => {
-  const { title, coords, scenePictureUrl } = req.body;
+  const { title, coords, scenePictureUrl, placeName } = req.body;
   const id = req.params.id;
 
   if (!title || !coords || !scenePictureUrl || !id) {

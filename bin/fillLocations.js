@@ -69,7 +69,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559046396/Film-Trails/nvxprwtxfq09xvk1abma.png',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -81,7 +80,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559046461/Film-Trails/hjaaikmdlx9luf8f5kcm.png',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -93,7 +91,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559046354/Film-Trails/ecga8xmseqkgwwlnpmdc.png',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -105,7 +102,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559046540/Film-Trails/imb4pzqzdaqgidspokuo.png',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -117,7 +113,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559046730/Film-Trails/nerhfsb2wisbbf2zbidi.png',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -129,7 +124,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559048659/Film-Trails/zongacyrq8fnbjzbbr1t.jpg',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -141,7 +135,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559046887/Film-Trails/zwrdeeiqtteli4g4bngj.jpg',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -153,7 +146,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049043/Film-Trails/reg3bgpotlqafvgnjuzr.png',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -165,7 +157,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559048823/Film-Trails/jjrrgx4h15gyhywwzwrr.png',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -177,7 +168,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049121/Film-Trails/yve6zutlzlu9ugnw9z9o.png',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -189,7 +179,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559048989/Film-Trails/igo50kh14ojlpmsiyvdb.png',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -201,7 +190,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049242/Film-Trails/flapk95g615mrw0wd49x.jpg',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -213,7 +201,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049178/Film-Trails/szgbdzxkxkh0fjgjzsnn.png',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -225,7 +212,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049303/Film-Trails/rihyxfk0jmm3gxqvaa2t.png',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -237,7 +223,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049352/Film-Trails/dilfj57yfkrlhkhrzd5s.png',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -249,7 +234,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049648/Film-Trails/tr1yfxtg02vlnacyyss0.png',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -261,7 +245,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049813/Film-Trails/cco62j0g0yp4kytn82s3.png',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -273,7 +256,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049985/Film-Trails/vgwxq3gudidtaoijdcn3.jpg',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -285,7 +267,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049883/Film-Trails/ml7w0djbgxwymzc923s0.png',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -297,7 +278,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049764/Film-Trails/nxuvngugpulewa2hw8uj.jpg',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -309,7 +289,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049931/Film-Trails/f9kahwlvc3jvvlaseqfv.png',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -321,7 +300,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559050241/Film-Trails/ahnnvlraffnimqslvxuq.png',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -333,7 +311,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559050042/Film-Trails/rznwtnvoj7kvt69ub7c9.jpg',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Vicky Cristina Barcelona',
@@ -345,7 +322,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559050352/Film-Trails/qyvjidtcr90u2vex5gpf.png',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Game of Thrones',
@@ -357,7 +333,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559051249/Film-Trails/kvfdgqiwg21eeflwa40b.png',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Game of Thrones',
@@ -369,7 +344,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559051551/Film-Trails/euzhddcbs9wpgzivtxoh.jpg',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Game of Thrones',
@@ -381,7 +355,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559052100/Film-Trails/wckf6l9nle1vsxurjk8k.jpg',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Game of Thrones',
@@ -393,7 +366,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559052377/Film-Trails/dvy6ukdnmzovo77jtyvs.jpg',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Game of Thrones',
@@ -405,7 +377,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559052613/Film-Trails/x7utizzfncls99vmrcgx.jpg',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Game of Thrones',
@@ -417,7 +388,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559051748/Film-Trails/zkimrlcwpqbs6b3knqqp.jpg',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Game of Thrones',
@@ -429,7 +399,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559052871/Film-Trails/g0h9mttcu0cykhee9gxo.jpg',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'Game of Thrones',
@@ -441,7 +410,6 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559053159/Film-Trails/ag4yz6h8nmbscgs2dkgj.jpg',
-                placeName: 'undefined',
                 user: user._id
               },{
                 title: 'The Matrix',
