@@ -288,6 +288,39 @@ h3 {
   margin-left: 25px;
 }
 
+.movie-information {
+  margin: 25px;
+}
+
+.info-plot {
+  font-size:  16px;
+}
+
+.info-container {
+  margin-top: 30px;
+  display: flex;
+}
+
+.info-image {
+  width: 100%;
+}
+
+.info-image img{
+  width: 100%;
+}
+
+.info-other {
+  padding-top: 20px;
+}
+
+.info-other p {
+  margin-bottom: 15px;
+}
+
+.info-other a {
+  color: rgb(74, 74, 74);
+}
+
 
 
 
@@ -462,7 +495,19 @@ h3 {
   color: rgb(74, 74, 74);
 }
 
+.picture-update{
+  width: 100%;
+}
 
+.edit-foto-content {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.update-picture-icon {
+  width: 18px;
+  margin: 0px 10px;
+}
 
 /* ---- typography ---- */
 
