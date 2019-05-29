@@ -33,6 +33,7 @@ Location.find()
           type: "Point"
         },
         scenePictureUrl: '${location.scenePictureUrl}',
+        placeName: '${location.placeName}',
         user: user._id
       },`;
     })
