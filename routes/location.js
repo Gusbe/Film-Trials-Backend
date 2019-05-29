@@ -4,6 +4,7 @@ const {isLoggedIn} = require('./../helpers/middlewares');
 const parser = require('../config/cloudinary');
 
 const Location = require('./../models/location.js');
+const OMDb = require('./../services/OMDb');
 
 //POST /location/add
 router.post('/add', isLoggedIn(),(req, res, next) => {
@@ -16,14 +17,33 @@ router.post('/add', isLoggedIn(),(req, res, next) => {
       .json({ message: 'There is not all the necessary information' });
   }
   else {
-    const user = req.session.currentUser._id;
-    Location.create({ user, title, coords, scenePictureUrl, placeName })
-      .then((locationObject) => {
-        res
-          .status(200)
-          .json(locationObject);
+
+    OMDb.getMovie(title)
+      .then((data) => {
+        let info = {};
+        if (data.Response !== 'False') {
+           info = {
+            year: data.Year,
+            director: data.Director,
+            actors: data.Actors,
+            plot: data.Plot,
+            awards: data.Awars,
+            poster: data.Poster,
+            website: data.Website
+          };
+        }
+        const user = req.session.currentUser._id;
+        Location.create({ user, title, coords, scenePictureUrl, placeName, info })
+          .then((locationObject) => {
+            res
+              .status(200)
+              .json(locationObject);
+          })
+          .catch((err) => next(err));
       })
-      .catch((err) => next(err));
+      .catch((err) => console.log(err));
+
+
   }
 });
 
@@ -149,6 +169,12 @@ router.get('/:id', (req, res) => {
     })
     .catch((err) => next(err));
 });
+
+
+
+
+
+
 
 
 

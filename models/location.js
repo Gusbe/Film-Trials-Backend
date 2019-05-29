@@ -16,12 +16,21 @@ const locationSchema = new Schema({
       required: true
     }
   },
-  scenePictureUrl: String
+  scenePictureUrl: String,
+  info: {
+    year: { type: String },
+    director: { type: String },
+    actors: { type: String },
+    plot: { type: String },
+    awards: { type: String },
+    poster: { type: String },
+    website: { type: String } 
+  }
 }, {
   timestamps: {
     createdAt: 'created_at',
     updatedAt: 'updated_at'
-  },
+  }
 });
 
 locationSchema.index({coords: '2dsphere'});

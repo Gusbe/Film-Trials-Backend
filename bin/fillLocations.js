@@ -5,6 +5,8 @@ require('dotenv').config();
 const Location = require('./../models/location');
 const User = require('./../models/user');
 
+const OMDb = require('./../services/OMDb');
+
 
 
 mongoose.connect(process.env.MONGODB_URI, {
@@ -69,7 +71,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559046396/Film-Trails/nvxprwtxfq09xvk1abma.png',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Vicky Cristina Barcelona',
                 coords: {
@@ -80,7 +91,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559046461/Film-Trails/hjaaikmdlx9luf8f5kcm.png',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Vicky Cristina Barcelona',
                 coords: {
@@ -91,7 +111,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559046354/Film-Trails/ecga8xmseqkgwwlnpmdc.png',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Vicky Cristina Barcelona',
                 coords: {
@@ -102,7 +131,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559046540/Film-Trails/imb4pzqzdaqgidspokuo.png',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Vicky Cristina Barcelona',
                 coords: {
@@ -113,7 +151,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559046730/Film-Trails/nerhfsb2wisbbf2zbidi.png',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Vicky Cristina Barcelona',
                 coords: {
@@ -124,7 +171,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559048659/Film-Trails/zongacyrq8fnbjzbbr1t.jpg',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Vicky Cristina Barcelona',
                 coords: {
@@ -135,7 +191,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559046887/Film-Trails/zwrdeeiqtteli4g4bngj.jpg',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Vicky Cristina Barcelona',
                 coords: {
@@ -146,7 +211,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049043/Film-Trails/reg3bgpotlqafvgnjuzr.png',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Vicky Cristina Barcelona',
                 coords: {
@@ -157,7 +231,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559048823/Film-Trails/jjrrgx4h15gyhywwzwrr.png',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Vicky Cristina Barcelona',
                 coords: {
@@ -179,7 +262,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559048989/Film-Trails/igo50kh14ojlpmsiyvdb.png',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Vicky Cristina Barcelona',
                 coords: {
@@ -190,7 +282,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049242/Film-Trails/flapk95g615mrw0wd49x.jpg',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Vicky Cristina Barcelona',
                 coords: {
@@ -201,7 +302,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049178/Film-Trails/szgbdzxkxkh0fjgjzsnn.png',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Vicky Cristina Barcelona',
                 coords: {
@@ -212,7 +322,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049303/Film-Trails/rihyxfk0jmm3gxqvaa2t.png',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Vicky Cristina Barcelona',
                 coords: {
@@ -223,7 +342,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049352/Film-Trails/dilfj57yfkrlhkhrzd5s.png',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Vicky Cristina Barcelona',
                 coords: {
@@ -234,7 +362,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049648/Film-Trails/tr1yfxtg02vlnacyyss0.png',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Vicky Cristina Barcelona',
                 coords: {
@@ -245,7 +382,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049813/Film-Trails/cco62j0g0yp4kytn82s3.png',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Vicky Cristina Barcelona',
                 coords: {
@@ -256,7 +402,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049985/Film-Trails/vgwxq3gudidtaoijdcn3.jpg',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Vicky Cristina Barcelona',
                 coords: {
@@ -267,7 +422,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049883/Film-Trails/ml7w0djbgxwymzc923s0.png',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Vicky Cristina Barcelona',
                 coords: {
@@ -278,7 +442,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049764/Film-Trails/nxuvngugpulewa2hw8uj.jpg',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Vicky Cristina Barcelona',
                 coords: {
@@ -289,7 +462,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559049931/Film-Trails/f9kahwlvc3jvvlaseqfv.png',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Vicky Cristina Barcelona',
                 coords: {
@@ -300,7 +482,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559050241/Film-Trails/ahnnvlraffnimqslvxuq.png',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Vicky Cristina Barcelona',
                 coords: {
@@ -311,7 +502,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559050042/Film-Trails/rznwtnvoj7kvt69ub7c9.jpg',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Vicky Cristina Barcelona',
                 coords: {
@@ -322,7 +522,16 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559050352/Film-Trails/qyvjidtcr90u2vex5gpf.png',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: 2008,
+                  director: 'Woody Allen',
+                  actors: 'Rebecca Hall, Scarlett Johansson, Christopher Evan Welch, Chris Messina',
+                  plot: 'Sexually adventurous Cristina and her friend Vicky, who is bright but cautious, holiday in Barcelona where they meet the celebrated and wholly seductive painter, Juan Antonio. Vicky is not about to dive into a sexual adventure being committed to her forthcoming marriage. But Cristina is immediately captivated by Juan Antonio\'s free spirit and his romantic allure is enhanced when she hears the delicious details of his divorce from fellow artist, the tempestuous Maria Elena.',
+                  awards: 'Won 1 Oscar. Another 31 wins & 53 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
+                  website: 'http://www.vickycristina-movie.com/'
+                }
               },{
                 title: 'Game of Thrones',
                 coords: {
@@ -333,7 +542,15 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559051249/Film-Trails/kvfdgqiwg21eeflwa40b.png',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: '2011-2019' ,
+                  director: 'N/A',
+                  actors: 'Peter Dinklage, Lena Headey, Emilia Clarke, Kit Harington',
+                  plot: 'In the mythical continent of Westeros, several powerful families fight for control of the Seven Kingdoms. As conflict erupts in the kingdoms of men, an ancient enemy rises once again to threaten them all. Meanwhile, the last heirs of a recently usurped dynasty plot to take back their homeland from across the Narrow Sea.',
+                  awards: 'Won 1 Golden Globe. Another 273 wins & 454 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BMjA5NzA5NjMwNl5BMl5BanBnXkFtZTgwNjg2OTk2NzM@._V1_SX300.jpg'
+                }
               },{
                 title: 'Game of Thrones',
                 coords: {
@@ -344,7 +561,15 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559051551/Film-Trails/euzhddcbs9wpgzivtxoh.jpg',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: '2011-2019' ,
+                  director: 'N/A',
+                  actors: 'Peter Dinklage, Lena Headey, Emilia Clarke, Kit Harington',
+                  plot: 'In the mythical continent of Westeros, several powerful families fight for control of the Seven Kingdoms. As conflict erupts in the kingdoms of men, an ancient enemy rises once again to threaten them all. Meanwhile, the last heirs of a recently usurped dynasty plot to take back their homeland from across the Narrow Sea.',
+                  awards: 'Won 1 Golden Globe. Another 273 wins & 454 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BMjA5NzA5NjMwNl5BMl5BanBnXkFtZTgwNjg2OTk2NzM@._V1_SX300.jpg'
+                }
               },{
                 title: 'Game of Thrones',
                 coords: {
@@ -355,7 +580,15 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559052100/Film-Trails/wckf6l9nle1vsxurjk8k.jpg',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: '2011-2019' ,
+                  director: 'N/A',
+                  actors: 'Peter Dinklage, Lena Headey, Emilia Clarke, Kit Harington',
+                  plot: 'In the mythical continent of Westeros, several powerful families fight for control of the Seven Kingdoms. As conflict erupts in the kingdoms of men, an ancient enemy rises once again to threaten them all. Meanwhile, the last heirs of a recently usurped dynasty plot to take back their homeland from across the Narrow Sea.',
+                  awards: 'Won 1 Golden Globe. Another 273 wins & 454 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BMjA5NzA5NjMwNl5BMl5BanBnXkFtZTgwNjg2OTk2NzM@._V1_SX300.jpg'
+                }
               },{
                 title: 'Game of Thrones',
                 coords: {
@@ -366,7 +599,15 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559052377/Film-Trails/dvy6ukdnmzovo77jtyvs.jpg',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: '2011-2019' ,
+                  director: 'N/A',
+                  actors: 'Peter Dinklage, Lena Headey, Emilia Clarke, Kit Harington',
+                  plot: 'In the mythical continent of Westeros, several powerful families fight for control of the Seven Kingdoms. As conflict erupts in the kingdoms of men, an ancient enemy rises once again to threaten them all. Meanwhile, the last heirs of a recently usurped dynasty plot to take back their homeland from across the Narrow Sea.',
+                  awards: 'Won 1 Golden Globe. Another 273 wins & 454 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BMjA5NzA5NjMwNl5BMl5BanBnXkFtZTgwNjg2OTk2NzM@._V1_SX300.jpg'
+                }
               },{
                 title: 'Game of Thrones',
                 coords: {
@@ -377,7 +618,15 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559052613/Film-Trails/x7utizzfncls99vmrcgx.jpg',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: '2011-2019' ,
+                  director: 'N/A',
+                  actors: 'Peter Dinklage, Lena Headey, Emilia Clarke, Kit Harington',
+                  plot: 'In the mythical continent of Westeros, several powerful families fight for control of the Seven Kingdoms. As conflict erupts in the kingdoms of men, an ancient enemy rises once again to threaten them all. Meanwhile, the last heirs of a recently usurped dynasty plot to take back their homeland from across the Narrow Sea.',
+                  awards: 'Won 1 Golden Globe. Another 273 wins & 454 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BMjA5NzA5NjMwNl5BMl5BanBnXkFtZTgwNjg2OTk2NzM@._V1_SX300.jpg'
+                }
               },{
                 title: 'Game of Thrones',
                 coords: {
@@ -388,7 +637,15 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559051748/Film-Trails/zkimrlcwpqbs6b3knqqp.jpg',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: '2011-2019' ,
+                  director: 'N/A',
+                  actors: 'Peter Dinklage, Lena Headey, Emilia Clarke, Kit Harington',
+                  plot: 'In the mythical continent of Westeros, several powerful families fight for control of the Seven Kingdoms. As conflict erupts in the kingdoms of men, an ancient enemy rises once again to threaten them all. Meanwhile, the last heirs of a recently usurped dynasty plot to take back their homeland from across the Narrow Sea.',
+                  awards: 'Won 1 Golden Globe. Another 273 wins & 454 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BMjA5NzA5NjMwNl5BMl5BanBnXkFtZTgwNjg2OTk2NzM@._V1_SX300.jpg'
+                }
               },{
                 title: 'Game of Thrones',
                 coords: {
@@ -399,7 +656,15 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559052871/Film-Trails/g0h9mttcu0cykhee9gxo.jpg',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: '2011-2019' ,
+                  director: 'N/A',
+                  actors: 'Peter Dinklage, Lena Headey, Emilia Clarke, Kit Harington',
+                  plot: 'In the mythical continent of Westeros, several powerful families fight for control of the Seven Kingdoms. As conflict erupts in the kingdoms of men, an ancient enemy rises once again to threaten them all. Meanwhile, the last heirs of a recently usurped dynasty plot to take back their homeland from across the Narrow Sea.',
+                  awards: 'Won 1 Golden Globe. Another 273 wins & 454 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BMjA5NzA5NjMwNl5BMl5BanBnXkFtZTgwNjg2OTk2NzM@._V1_SX300.jpg'
+                }
               },{
                 title: 'Game of Thrones',
                 coords: {
@@ -410,7 +675,15 @@ Location.remove({})
                   type: "Point"
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559053159/Film-Trails/ag4yz6h8nmbscgs2dkgj.jpg',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: '2011-2019' ,
+                  director: 'N/A',
+                  actors: 'Peter Dinklage, Lena Headey, Emilia Clarke, Kit Harington',
+                  plot: 'In the mythical continent of Westeros, several powerful families fight for control of the Seven Kingdoms. As conflict erupts in the kingdoms of men, an ancient enemy rises once again to threaten them all. Meanwhile, the last heirs of a recently usurped dynasty plot to take back their homeland from across the Narrow Sea.',
+                  awards: 'Won 1 Golden Globe. Another 273 wins & 454 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BMjA5NzA5NjMwNl5BMl5BanBnXkFtZTgwNjg2OTk2NzM@._V1_SX300.jpg'
+                }
               },{
                 title: 'The Matrix',
                 coords: {
@@ -422,7 +695,16 @@ Location.remove({})
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559138214/Film-Trails/js7ugyzvcnhtnzwc5xrd.jpg',
                 placeName: 'Wynyard',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: '1999',
+                  director: 'Lana Wachowski, Lilly Wachowski',
+                  actors: 'Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving',
+                  plot: 'Thomas A. Anderson is a man living two lives. By day he is an average computer programmer and by night a hacker known as Neo. Neo has always questioned his reality, but the truth is far beyond his imagination. Neo finds himself targeted by the police when he is contacted by Morpheus, a legendary computer hacker branded a terrorist by the government. Morpheus awakens Neo to the real world, a ravaged wasteland where most of humanity have been captured by a race of machines that live off of the humans\' body heat and electrochemical energy and who imprison their minds within an artificial reality known as the Matrix. As a rebel against the machines, Neo must return to the Matrix and confront the agents: super-powerful computer programs devoted to snuffing out Neo and the entire human rebellion.',
+                  awards: 'Won 4 Oscars. Another 34 wins & 48 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg',
+                  website: 'http://www.whatisthematrix.com'
+                }
               },{
                 title: 'The Matrix',
                 coords: {
@@ -434,7 +716,16 @@ Location.remove({})
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559138506/Film-Trails/thuepi9k3l6a6hsn4vkh.jpg',
                 placeName: 'Adam Street Bridge',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: '1999',
+                  director: 'Lana Wachowski, Lilly Wachowski',
+                  actors: 'Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving',
+                  plot: 'Thomas A. Anderson is a man living two lives. By day he is an average computer programmer and by night a hacker known as Neo. Neo has always questioned his reality, but the truth is far beyond his imagination. Neo finds himself targeted by the police when he is contacted by Morpheus, a legendary computer hacker branded a terrorist by the government. Morpheus awakens Neo to the real world, a ravaged wasteland where most of humanity have been captured by a race of machines that live off of the humans\' body heat and electrochemical energy and who imprison their minds within an artificial reality known as the Matrix. As a rebel against the machines, Neo must return to the Matrix and confront the agents: super-powerful computer programs devoted to snuffing out Neo and the entire human rebellion.',
+                  awards: 'Won 4 Oscars. Another 34 wins & 48 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg',
+                  website: 'http://www.whatisthematrix.com'
+                }
               },{
                 title: 'The Matrix',
                 coords: {
@@ -446,7 +737,16 @@ Location.remove({})
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559138604/Film-Trails/cersm6fqffjqdoqhwfr6.jpg',
                 placeName: 'Pitt Street',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: '1999',
+                  director: 'Lana Wachowski, Lilly Wachowski',
+                  actors: 'Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving',
+                  plot: 'Thomas A. Anderson is a man living two lives. By day he is an average computer programmer and by night a hacker known as Neo. Neo has always questioned his reality, but the truth is far beyond his imagination. Neo finds himself targeted by the police when he is contacted by Morpheus, a legendary computer hacker branded a terrorist by the government. Morpheus awakens Neo to the real world, a ravaged wasteland where most of humanity have been captured by a race of machines that live off of the humans\' body heat and electrochemical energy and who imprison their minds within an artificial reality known as the Matrix. As a rebel against the machines, Neo must return to the Matrix and confront the agents: super-powerful computer programs devoted to snuffing out Neo and the entire human rebellion.',
+                  awards: 'Won 4 Oscars. Another 34 wins & 48 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg',
+                  website: 'http://www.whatisthematrix.com'
+                }
               },{
                 title: 'The Matrix',
                 coords: {
@@ -458,7 +758,16 @@ Location.remove({})
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559139060/Film-Trails/ezc1msbj9bvigtpajtjy.jpg',
                 placeName: 'Colonial State Bank',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: '1999',
+                  director: 'Lana Wachowski, Lilly Wachowski',
+                  actors: 'Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving',
+                  plot: 'Thomas A. Anderson is a man living two lives. By day he is an average computer programmer and by night a hacker known as Neo. Neo has always questioned his reality, but the truth is far beyond his imagination. Neo finds himself targeted by the police when he is contacted by Morpheus, a legendary computer hacker branded a terrorist by the government. Morpheus awakens Neo to the real world, a ravaged wasteland where most of humanity have been captured by a race of machines that live off of the humans\' body heat and electrochemical energy and who imprison their minds within an artificial reality known as the Matrix. As a rebel against the machines, Neo must return to the Matrix and confront the agents: super-powerful computer programs devoted to snuffing out Neo and the entire human rebellion.',
+                  awards: 'Won 4 Oscars. Another 34 wins & 48 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg',
+                  website: 'http://www.whatisthematrix.com'
+                }
               },{
                 title: 'The Matrix',
                 coords: {
@@ -470,7 +779,16 @@ Location.remove({})
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559139462/Film-Trails/cyep43mwmpjwkh20m7dv.jpg',
                 placeName: 'Margaret Street',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: '1999',
+                  director: 'Lana Wachowski, Lilly Wachowski',
+                  actors: 'Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving',
+                  plot: 'Thomas A. Anderson is a man living two lives. By day he is an average computer programmer and by night a hacker known as Neo. Neo has always questioned his reality, but the truth is far beyond his imagination. Neo finds himself targeted by the police when he is contacted by Morpheus, a legendary computer hacker branded a terrorist by the government. Morpheus awakens Neo to the real world, a ravaged wasteland where most of humanity have been captured by a race of machines that live off of the humans\' body heat and electrochemical energy and who imprison their minds within an artificial reality known as the Matrix. As a rebel against the machines, Neo must return to the Matrix and confront the agents: super-powerful computer programs devoted to snuffing out Neo and the entire human rebellion.',
+                  awards: 'Won 4 Oscars. Another 34 wins & 48 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg',
+                  website: 'http://www.whatisthematrix.com'
+                }
               },{
                 title: 'The Matrix',
                 coords: {
@@ -482,7 +800,16 @@ Location.remove({})
                 },
                 scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559139585/Film-Trails/xo7etrlenzrxomywmsoy.jpg',
                 placeName: 'Hunter with Pitt Street',
-                user: user._id
+                user: user._id,
+                info: {
+                  year: '1999',
+                  director: 'Lana Wachowski, Lilly Wachowski',
+                  actors: 'Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving',
+                  plot: 'Thomas A. Anderson is a man living two lives. By day he is an average computer programmer and by night a hacker known as Neo. Neo has always questioned his reality, but the truth is far beyond his imagination. Neo finds himself targeted by the police when he is contacted by Morpheus, a legendary computer hacker branded a terrorist by the government. Morpheus awakens Neo to the real world, a ravaged wasteland where most of humanity have been captured by a race of machines that live off of the humans\' body heat and electrochemical energy and who imprison their minds within an artificial reality known as the Matrix. As a rebel against the machines, Neo must return to the Matrix and confront the agents: super-powerful computer programs devoted to snuffing out Neo and the entire human rebellion.',
+                  awards: 'Won 4 Oscars. Another 34 wins & 48 nominations.',
+                  poster: 'https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg',
+                  website: 'http://www.whatisthematrix.com'
+                }
               }
 
 
@@ -524,8 +851,24 @@ Location.remove({})
 
 
             Location.create(locationsArray)
-              .then(() => {
+              .then((data) => {
                 console.log(`> > > > > Created ${locationsArray.length} locations`);
+
+                // data.forEach( (element) => {
+                //   OMDb.getMovie(element.title)
+                //     .then( (info) => {
+                //       console.log(info);
+                //       Location.findByIdAndUpdate(element._id,{info: info},{new: true})
+                //         .then( (data) => {
+                //           console.log("change")
+                //           console.log(data)
+                //         })
+                //         .catch( (err) => console.log(err));
+                //     })
+                //     .catch( (err) => console.log(err));
+                // });
+
+
                 mongoose.connection.close();
               });
 
