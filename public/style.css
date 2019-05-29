@@ -22,7 +22,6 @@ body {
   font-family: Arial, sans-serif;
   line-height: 147%;
   color: rgb(74, 74, 74);
-  overflow:hidden;
 }
 
 .navbar {
@@ -177,7 +176,7 @@ h2{
 }
 
 .lat-lon-inputs {
-  display: none;
+  /* display: none; */
 }
 
 .add-form input {
@@ -210,38 +209,58 @@ h3 {
   margin-top: 20px;
 }
 
+
+
+
+
+
+
+
 .view-page {
   margin-top: 40px;
   padding-bottom: 62px;
 }
 
 .view-map {
-  height: 150px;
+  height: 200px;
+  padding: 20px;
+}
+
+.view-map-wrap {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0);
 }
 
 .view-title {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
-  text-align: center;
+  padding-top: 0px;
 }
 
 .view-title h1{
-  font-size: 32px;
+  font-size: 28px;
   font-family: Arial, sans-serif;
   color: rgb(74, 74, 74);
+  margin-left: 20px;
+}
+
+.view-title h2{
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: rgb(74, 74, 74);
+  margin: 0px 0px 20px 21px;
 }
 
 .view-image img{
-  /* margin: 20px 20px 20px 20px; */
   height: auto;
   width: 100%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0);
+
 }
 
 .view-image p{
   text-align: right;
   margin-right: 20px;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .view-links {
@@ -249,7 +268,7 @@ h3 {
 }
 
 .view-links-component-link {
-  margin: 20px 20px 280px 20px;
+  margin: 20px 10px 280px 10px;
   color: rgb(74, 74, 74);
   text-decoration: underline;
 }
@@ -258,6 +277,22 @@ h3 {
   margin: 20px 20px 80px 20px;
   color: rgb(74, 74, 74);
 }
+
+.update-icon {
+  width: 18px;
+  padding-right: 5px;
+}
+
+.delete-icon {
+  width: 16px;
+  margin-left: 25px;
+}
+
+
+
+
+
+
 
 
 
