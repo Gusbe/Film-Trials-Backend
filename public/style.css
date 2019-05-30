@@ -176,7 +176,7 @@ h2{
 }
 
 .lat-lon-inputs {
-  /* display: none; */
+  display: none; 
 }
 
 .add-form input {
