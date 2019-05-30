@@ -209,6 +209,22 @@ h3 {
   margin-top: 20px;
 }
 
+.not-found {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20%;
+}
+
+.not-found img {
+  height: auto;
+}
+
+.not-found p {
+  text-align: center;
+  padding-top: 25px;
+}
+
 
 
 
