@@ -810,7 +810,173 @@ Location.remove({})
                   poster: 'https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg',
                   website: 'http://www.whatisthematrix.com'
                 }
+              },{
+              placeName: 'Mount Ngauruhoe',
+              title: 'The Lord of the Rings',
+              coords: {
+                coordinates: [
+                  175.6343369,
+                  -39.1583427
+                ],
+                type: "Point"
+              },
+              scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559205938/Film-Trails/hqtuyzpwuu1lbhgrptmm.jpg',
+              user: user._id,
+              info: {
+                year: '2001',
+                director: 'Peter Jackson',
+                actors: 'Viggo Mortensen, Elijah Wood, Ian McKellen, Orlando Bloom, Liv Tyler',
+                plot: 'An ancient Ring thought lost for centuries has been found, and through a strange twist in fate has been given to a small Hobbit named Frodo. When Gandalf discovers the Ring is in fact the One Ring of the Dark Lord Sauron, Frodo must make an epic quest to the Cracks of Doom in order to destroy it! However he does not go alone. He is joined by Gandalf, Legolas the elf, Gimli the Dwarf, Aragorn, Boromir and his three Hobbit friends Merry, Pippin and Samwise. Through mountains, snow, darkness, forests, rivers and plains, facing evil and danger at every corner the Fellowship of the Ring must go. Their quest to destroy the One Ring is the only hope for the end of the Dark Lords reign!',
+                awards: 'Won 4 Oscar and 4 BAFTA',
+                poster: 'https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg',
+                website: 'https://www.warnerbros.com/movies/lord-rings-fellowship-ring'
               }
+            },{
+              placeName: 'Matamata, Waikato',
+              title: 'The Lord of the Rings',
+              coords: {
+                coordinates: [
+                  175.68100000000004,
+                  -37.8578
+                ],
+                type: "Point"
+              },
+              scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559206486/Film-Trails/aknnhbnzastbu62xp3x9.jpg',
+              user: user._id,
+              info: {
+                year: '2001',
+                director: 'Peter Jackson',
+                actors: 'Viggo Mortensen, Elijah Wood, Ian McKellen, Orlando Bloom, Liv Tyler',
+                plot: 'An ancient Ring thought lost for centuries has been found, and through a strange twist in fate has been given to a small Hobbit named Frodo. When Gandalf discovers the Ring is in fact the One Ring of the Dark Lord Sauron, Frodo must make an epic quest to the Cracks of Doom in order to destroy it! However he does not go alone. He is joined by Gandalf, Legolas the elf, Gimli the Dwarf, Aragorn, Boromir and his three Hobbit friends Merry, Pippin and Samwise. Through mountains, snow, darkness, forests, rivers and plains, facing evil and danger at every corner the Fellowship of the Ring must go. Their quest to destroy the One Ring is the only hope for the end of the Dark Lords reign!',
+                awards: 'Won 4 Oscar and 4 BAFTA',
+                poster: 'https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg',
+                website: 'https://www.warnerbros.com/movies/lord-rings-fellowship-ring'
+              }
+            },{
+              placeName: 'Kawarau Gorge',
+              title: 'The Lord of the Rings',
+              coords: {
+                coordinates: [
+                  169.12618878970375,
+                  -45.0514170904491
+                ],
+                type: "Point"
+              },
+              scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559206796/Film-Trails/f3jwby9wo42q8hsoonj3.png',
+              user: user._id,
+              info: {
+                year: '2001',
+                director: 'Peter Jackson',
+                actors: 'Viggo Mortensen, Elijah Wood, Ian McKellen, Orlando Bloom, Liv Tyler',
+                plot: 'An ancient Ring thought lost for centuries has been found, and through a strange twist in fate has been given to a small Hobbit named Frodo. When Gandalf discovers the Ring is in fact the One Ring of the Dark Lord Sauron, Frodo must make an epic quest to the Cracks of Doom in order to destroy it! However he does not go alone. He is joined by Gandalf, Legolas the elf, Gimli the Dwarf, Aragorn, Boromir and his three Hobbit friends Merry, Pippin and Samwise. Through mountains, snow, darkness, forests, rivers and plains, facing evil and danger at every corner the Fellowship of the Ring must go. Their quest to destroy the One Ring is the only hope for the end of the Dark Lords reign!',
+                awards: 'Won 4 Oscar and 4 BAFTA',
+                poster: 'https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg',
+                website: 'https://www.warnerbros.com/movies/lord-rings-fellowship-ring'
+              }
+            },{
+              placeName: 'Glenorchy Paradise',
+              title: 'The Lord of the Rings',
+              coords: {
+                coordinates: [
+                  168.34095,
+                  -44.6736167
+                ],
+                type: "Point"
+              },
+              scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559207156/Film-Trails/ulkk5ad0yl74zfpqckhf.jpg',
+              user: user._id,
+              info: {
+                year: '2001',
+                director: 'Peter Jackson',
+                actors: 'Viggo Mortensen, Elijah Wood, Ian McKellen, Orlando Bloom, Liv Tyler',
+                plot: 'An ancient Ring thought lost for centuries has been found, and through a strange twist in fate has been given to a small Hobbit named Frodo. When Gandalf discovers the Ring is in fact the One Ring of the Dark Lord Sauron, Frodo must make an epic quest to the Cracks of Doom in order to destroy it! However he does not go alone. He is joined by Gandalf, Legolas the elf, Gimli the Dwarf, Aragorn, Boromir and his three Hobbit friends Merry, Pippin and Samwise. Through mountains, snow, darkness, forests, rivers and plains, facing evil and danger at every corner the Fellowship of the Ring must go. Their quest to destroy the One Ring is the only hope for the end of the Dark Lords reign!',
+                awards: 'Won 4 Oscar and 4 BAFTA',
+                poster: 'https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg',
+                website: 'https://www.warnerbros.com/movies/lord-rings-fellowship-ring'
+              }
+            },{
+              placeName: 'Takaro Road',
+              title: 'The Lord of the Rings',
+              coords: {
+                coordinates: [
+                  167.90795,
+                  -45.35145
+                ],
+                type: "Point"
+              },
+              scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559207343/Film-Trails/xnjhwezo4qtmzhyq8fjh.jpg',
+              user: user._id,
+              info: {
+                year: '2001',
+                director: 'Peter Jackson',
+                actors: 'Viggo Mortensen, Elijah Wood, Ian McKellen, Orlando Bloom, Liv Tyler',
+                plot: 'An ancient Ring thought lost for centuries has been found, and through a strange twist in fate has been given to a small Hobbit named Frodo. When Gandalf discovers the Ring is in fact the One Ring of the Dark Lord Sauron, Frodo must make an epic quest to the Cracks of Doom in order to destroy it! However he does not go alone. He is joined by Gandalf, Legolas the elf, Gimli the Dwarf, Aragorn, Boromir and his three Hobbit friends Merry, Pippin and Samwise. Through mountains, snow, darkness, forests, rivers and plains, facing evil and danger at every corner the Fellowship of the Ring must go. Their quest to destroy the One Ring is the only hope for the end of the Dark Lords reign!',
+                awards: 'Won 4 Oscar and 4 BAFTA',
+                poster: 'https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg',
+                website: 'https://www.warnerbros.com/movies/lord-rings-fellowship-ring'
+              }
+            },{
+              placeName: 'Queen Elizabeth Park',
+              title: 'The Lord of the Rings',
+              coords: {
+                coordinates: [
+                  174.98120342494394,
+                  -40.964984839734065
+                ],
+                type: "Point"
+              },
+              scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559207718/Film-Trails/yjztok0s7wkibifeveiw.jpg',
+              user: user._id,
+              info: {
+                year: '2001',
+                director: 'Peter Jackson',
+                actors: 'Viggo Mortensen, Elijah Wood, Ian McKellen, Orlando Bloom, Liv Tyler',
+                plot: 'An ancient Ring thought lost for centuries has been found, and through a strange twist in fate has been given to a small Hobbit named Frodo. When Gandalf discovers the Ring is in fact the One Ring of the Dark Lord Sauron, Frodo must make an epic quest to the Cracks of Doom in order to destroy it! However he does not go alone. He is joined by Gandalf, Legolas the elf, Gimli the Dwarf, Aragorn, Boromir and his three Hobbit friends Merry, Pippin and Samwise. Through mountains, snow, darkness, forests, rivers and plains, facing evil and danger at every corner the Fellowship of the Ring must go. Their quest to destroy the One Ring is the only hope for the end of the Dark Lords reign!',
+                awards: 'Won 4 Oscar and 4 BAFTA',
+                poster: 'https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg',
+                website: 'https://www.warnerbros.com/movies/lord-rings-fellowship-ring'
+              }
+            },{placeName: 'Passeig Lluis Companys',
+            title: 'The last days',
+            coords: {
+              coordinates: [
+                2.1823328380392657,
+                41.389724504091475
+              ],
+              type: "Point"
+            },
+            scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559209119/Film-Trails/tmurbf9te4zfiarbwhsr.jpg',
+            user: user._id,
+            info: {
+              year: '2013',
+              director: 'David Pastor, Alex Pastor',
+              actors: 'Quim Gutiérrez, Jose Coronado, Marta Etura, Leticia Dolera',
+              plot: '2013. A mysterious epidemic spreads across the planet; humanity develops an irrational fear of open spaces which causes death within seconds. Soon, the entire global populace is trapped ...',
+              awards: '8 wins & 6 nominations.',
+              poster: 'https://m.media-amazon.com/images/M/MV5BMzY4MTM4MjU4Ml5BMl5BanBnXkFtZTcwNTE4MjgyOQ@@._V1_SX300.jpg',
+              website: 'http://www.losultimosdias.es'
+            }
+          },{placeName: 'Tibidabo',
+          title: 'The Machinist',
+          coords: {
+            coordinates: [
+              2.120194763960608,
+              41.42124848696604
+            ],
+            type: "Point"
+          },
+          scenePictureUrl: 'https://res.cloudinary.com/dslkk8z2m/image/upload/v1559209794/Film-Trails/yifdmnaegn8rrqxxjhcm.jpg',
+          user: user._id,
+          info: {
+            year: '2004',
+            director: 'Brad Anderson',
+            actors: 'Christian Bale, Jennifer Jason Leigh, Aitana Sánchez-Gijón, John Sharian',
+            plot: 'An industrial worker who hasn\'t slept in a year begins to doubt his own sanity.',
+            awards: '7 wins & 15 nominations.',
+            poster: 'https://m.media-amazon.com/images/M/MV5BNjk1NzBlY2YtNjJmNi00YTVmLWI2OTgtNDUxNDE5NjUzZmE0XkEyXkFqcGdeQXVyNTc1NTQxODI@._V1_SX300.jpg',
+            website: 'http://www.machinistmovie.com'
+          }
+        },
 
 
 
