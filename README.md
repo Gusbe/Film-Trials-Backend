@@ -13,14 +13,13 @@ Film Trails allows to find spots by location where movies or tv shows were filme
 -  **Add location** As a user I can add a movie location and share it with the community.
 -  **Update location** As a user I can update the information of a movie location that I uploaded.
 -  **Delete location** As a user I can delete a movie location that I uploaded.
--  **List locations** As a user I want to see the nearest movie locations with a spot and maximum distance given.
--  **See a movie location** As a user I want to see the details of a movie location.
+-  **Search locations by map** As a user I want to see the locations in a map view
+-  **List locations** As a user I want to see the nearest movie locations with a spot pin
+-  **See a movie location information** As a user I want to see the details of a movie location.
 
 ## Backlog
 
 User profile:
-- Search and visualize results in a map view
-- Add the location of a new movie spot with a map view
 - List the spots that one user uploads
 - Upload real pictures in a movie location
 - Validation of spots
@@ -36,51 +35,42 @@ User profile:
 | `get` | `/auth/signup` | SignupPageComponent| public| signup form redirect to add location after signup |
 | `get` | `/auth/login` | LoginPageComponent | public |login form, link to signup, redirect to add location after login |
 | `get` | `/auth/logout` | n/a| public | navigate to homepage after logout, expire session |
-| `get` | `/search/:lat/:lon/:dist` | SearchPageComponent| public | shows search results |
-| `get` | `/search` | SearchPageComponent| public | shows the searcher only |
+| `get` | `/search/?coords&dist` | SearchPageComponent| public | shows search results |
 | `get` | `/location/:id` | LocationPageComponent| public | shows a location information |
 | `get` | `/location/add` | AddLocationPageComponent| logged page | shows a new location form |
 | `get` | `/location/update/:id` | UpdateLocationPageComponent| logged page | shows a update location form if the logged user is the owner |
-| `get` | `**` | NotFoundPageComponent | public | 
 
 
 
 
 ## Components
 
-- HomePageComponent
+- NotFound
 
-- HeaderComponent
-  - Input: sessionObject
+- Navbar
+  - Logo
 
-- LoginPageComponent
-  - Inside: HeaderComponent
+- Footer
 
-- SignupPageComponent
-  - Inside: HeaderComponent
+- Signup
 
-- SearchPageComponent
-  - Input: searchObject
-  - Inside: HeaderComponent, SearcherComponent, ResultListComponent
+- Login
 
-- SearcherComponent
-  - Input: searchObject
+- AddLocation
 
-- ResultListComponent
-  - Input: resultsObject
-  - Inside: List of OneResultComponent
+- UpdateLocation
 
-- OneResultComponent
-  - Input: LocationObject
+- Search
+  - ResultList
+    - OneResult
+    
+- SearchMap
 
-- AddLocationPageComponent
-  - Inside: HeaderComponent
-  
-- LocationPageComponent
-  - Inside: HeaderComponent
+- ViewLocation
 
-- UpdateLocationPageComponent
-  - Inside: HeaderComponent
+
+
+
 
 
 ## Services
@@ -91,11 +81,12 @@ User profile:
   - auth.logout()
 
 - Location Service
-  - location.detail(id)
-  - location.create(data)
+  - location.view(id)
+  - location.add(data)
   - location.delete(id)
-  - location.update(id)
-  - location.search(terms) 
+  - location.update(id, location)
+  - location.imageUpload(file)
+  - location.search(searchParams) 
 
 # Server
 
@@ -104,17 +95,37 @@ User profile:
 User model
 
 ```
-username - String // required
-password - String // required
+username: {type: String, required: true}
+password: {type: String, required: true}
 ```
 
 Location model
 
 ```
-user - ObjectID<User> // required
-title - String // required
-coords - Point // required
-scenePictureUrl - String // required
+user: { type: Schema.Types.ObjectId, ref: 'User' }
+  title: { type: String, required: true }
+  placeName: { type: String }
+  coords: {
+    type: {
+      type: String
+      enum: ['Point']
+      required: true
+    }
+    coordinates: {
+      type: [Number]
+      required: true
+    }
+  }
+  scenePictureUrl: String
+  info: {
+    year: { type: String }
+    director: { type: String }
+    actors: { type: String }
+    plot: { type: String }
+    awards: { type: String }
+    poster: { type: String }
+    website: { type: String } 
+  }
 ```
 
 ## API Endpoints (backend routes)
@@ -191,10 +202,6 @@ scenePictureUrl - String // required
 
 
 ## Links
-
-### Trello/Kanban
-
-[Trello board](https://trello.com/b/g0ZOE9Re/film-trails)
 
 ### Git
 
